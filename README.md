@@ -9,6 +9,8 @@ terraform init
 - Step 2: Import existing Google Compute Instances
 
 ```shell
+# Update instances.tf with right resource names (google_compute_instance.tf-instance-1 and google_compute_instance.tf-instance-2)
+
 # Update .tfstate
 terraform import 'module.instances.google_compute_instance.tf-instance-1' '<compute_instance_ID>'
 terraform import 'module.instances.google_compute_instance.tf-instance-2' '<compute_instance_ID>'
