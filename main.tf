@@ -43,7 +43,7 @@ module "vpc" {
     ]
 }
 
-resource "google_compute_firewall" "rules" {
+resource "google_compute_firewall" "ingress-rules" {
   project     = var.project_id
   name        = "tf-firewall"
   network     = "tf-vpc-074515"
