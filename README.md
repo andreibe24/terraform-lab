@@ -19,6 +19,8 @@ terraform apply
 
 - Step 3: Create Cloud Storage (Bucket) in `storage.tf` -> `terraform apply` -> mark it as terraform backend in `main.tf` -> `terraform init -migrate-state`
 
-- Step 4: Create a new Compute Instance and change machine type for all with `e2-standard-2`
+- Step 4: Create a new Compute Instance and change machine type for all with `e2-standard-2`, then `terraform init && terraform apply`
 
-- Step 5: Remove instance 3 from .tf
+- Step 5: Remove instance 3 from .tf, then `terraform init && terraform apply`
+
+- Step 6: Use a new module, then `terraform init && terraform apply`
