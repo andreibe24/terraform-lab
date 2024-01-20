@@ -24,7 +24,7 @@ module "storage" {
 
 terraform {
   backend "gcs" {
-    bucket  = var.bucket_name
+    bucket  = tf-bucket-198754
     prefix  = "terraform/state"
   }
 }
