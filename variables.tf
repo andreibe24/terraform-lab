@@ -15,3 +15,9 @@ variable "zone" {
   type        = string
   default     = "us-west1-c"
 }
+
+variable "bucket_name" {
+  description = "Bucket name"
+  type        = string
+  default     = "tf-bucket-198754"
+}
