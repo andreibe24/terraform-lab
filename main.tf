@@ -44,6 +44,22 @@ module "vpc" {
     ]
 }
 
+resource "google_compute_firewall" "rules" {
+  project     = var.project_id
+  name        = "tf-firewall"
+  network     = "tf-vpc-074515"
+  description = "Creates firewall rule targeting tagged instances"
+
+  direction   = "INGRESS"
+
+  allow {
+    protocol  = "tcp"
+    ports     = ["80"]
+  }
+
+  source_ranges = ["0.0.0.0/0"]
+}
+
 terraform {
   backend "gcs" {
     bucket  = "tf-bucket-198754"
