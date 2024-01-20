@@ -1,7 +1,7 @@
 variable "project_id" {
   description = "The ID of the project"
   type        = string
-  default     = "qwiklabs-gcp-04-82a980d09271"
+  default     = "qwiklabs-gcp-04-96b727e0cbf9"
 }
 
 variable "region" {
