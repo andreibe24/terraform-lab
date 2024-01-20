@@ -17,4 +17,6 @@ terraform import 'module.instances.google_compute_instance.tf-instance-2' '<comp
 terraform apply
 ```
 
-- Step 3: Create Cloud Storage (Bucket) and mark it as terraform backend
+- Step 3: Create Cloud Storage (Bucket) in `storage.tf` -> `terraform apply` -> mark it as terraform backend in `main.tf` -> `terraform init -migrate-state`
+
+- Step 4: Create a new Compute Instance and change machine type for all with `e2-standard-2`
