@@ -25,6 +25,6 @@ terraform apply
 
 - Step 5: Remove instance 3 from .tf, then `terraform init && terraform apply`
 
-- Step 6: Use a new module, then `terraform init && terraform apply` & use VPC on the instances
+- Step 6: Use a new module & use VPC on the instances, then `terraform init && terraform apply`
 
 - Step 7: Add a firewall rule, then `terraform init && terraform apply`
